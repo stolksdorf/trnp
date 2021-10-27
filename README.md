@@ -3,7 +3,7 @@
 > A tiny data markup language for non-technical humans that's Hard To Mess Upᵗᵐ
 
 
-*features:*
+**features:**
 - Minimal new syntax.
 - Reduce opening/closing syntax whenever possible (eg. quotes, braces, etc.)
 - Minimal data types: Booleans, numbers, strings; Lists and Dictionaries
@@ -12,6 +12,7 @@
 - No weird type coercion. Eg. 'yes' -> true
 - Indentation matters. Nesting behavior is defined by indentation.
 - Tolerant error handling. If the parser encounters errors will continue to parse
+- Parser is only **70 lines of code**
 
 
 
