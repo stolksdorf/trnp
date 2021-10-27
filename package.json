@@ -1,0 +1,24 @@
+{
+  "name": "pico-trnp",
+  "version": "1.0.0",
+  "description": "A tiny data markup language for non-technical humans",
+  "main": "trnp.js",
+  "scripts": {
+    "test": "pico-check ./tests",
+    "dev": "pico-check --watch ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stolksdorf/trnp.git"
+  },
+  "keywords": ["yaml", "template", "markup", "serialization"],
+  "author": "stolksdorf <scott.tolksdorf@gmail.com> (https://stolksdorf.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stolksdorf/trnp/issues"
+  },
+  "homepage": "https://github.com/stolksdorf/trnp#readme",
+  "devDependencies": {
+    "pico-check": "^2.1.3"
+  }
+}
