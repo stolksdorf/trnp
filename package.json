@@ -1,6 +1,6 @@
 {
   "name": "pico-trnp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny data markup language for non-technical humans",
   "main": "trnp.js",
   "scripts": {

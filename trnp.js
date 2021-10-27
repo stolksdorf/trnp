@@ -26,7 +26,7 @@ const tokenize = (lines)=>{
 			result.push({indent, arr:true});
 			return tokenizeLine(val.slice(1), indent + 1);
 		}
-		const [_,key,objVal] = val.match(/^(\s*[a-z0-9A-Z_]+\s*):(.*)/) || [];
+		const [_,key,objVal] = val.match(/^(\s*[a-z0-9A-Z_]+\s*):(( .*)|(\s*$))/) || [];
 		if(key){
 			result.push({indent, key:key.trim()});
 			return tokenizeLine(objVal, indent + key.length + 1);
@@ -41,7 +41,6 @@ const tokenize = (lines)=>{
 	lines.map(line=>tokenizeLine(line))
 	return result;
 };
-
 const parse = (tokens)=>{
 	let result;
 	for(let idx=0;idx<tokens.length;idx++){

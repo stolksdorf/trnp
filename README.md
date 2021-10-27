@@ -87,7 +87,7 @@ cool_guy : true
 - *Numbers*: Handles negatives, decimals, and underscores anywhere within the number (eg. `-45_000.3_4_5` is valid)
 - *Strings*: Any raw text. `trnp` does not use any quotes for parsing. Multiline strings must be the same indentation across lines, seperating empty lines are fine.
 - *Arrays*: Line must start with `-`. Contiguous array lines will be joined into one list
-- *Objects*: Key-val separated by a `:`. Keys must only contain letters, numbers, and underscores. Subsequent lines indented deeper than the key are processed as the value.
+- *Objects*: Key-val separated by a `: `. Must have a space after if it's value is on the same line. Keys must only contain letters, numbers, and underscores. Subsequent lines indented deeper than the key are processed as the value.
 
 
 ### Why not use YAML/TOML/JSON ?
