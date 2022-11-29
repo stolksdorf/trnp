@@ -19,7 +19,7 @@ module.exports = {
 			  - name : mark
 			    id   : boop
 
-			more_test : This is a string: with a colon in it
+			more_test : "This is a string: with a colon in it"
 		`);
 
 		t.is(result, {
